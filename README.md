@@ -1,6 +1,6 @@
 # Front-End Development Capstone Project
 
-Welcome to the Front-End Development Capstone Project for the Coursera course. This project will guide you through setting up a GitHub repository, developing static website layouts, and completing a front-end development capstone project.
+Welcome to the Front-End Development Capstone Project for the Coursera course. This project will guide you through setting up a GitHub repository, developing static website layouts, and completing a front-end development capstone project. f
 
 ## Table of Contents
 - [Introduction](#introduction)
