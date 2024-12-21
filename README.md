@@ -1,7 +1,8 @@
 # Front-End Development Capstone Project
 
 Welcome to the Front-End Development Capstone Project for the Coursera course. This project will guide you through setting up a GitHub repository, developing static website layouts, and completing a front-end development capstone project. f
-
+git config ‐‐global user.email "Your GitHub mail ID"
+git config ‐‐global user.name "Your GitHub username"
 ## Table of Contents
 - [Introduction](#introduction)
 - [Project Setup](#project-setup)
