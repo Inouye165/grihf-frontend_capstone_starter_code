@@ -10,16 +10,16 @@ const Login = () => {
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
-    setEmailError(''); // Clear error message when user types
+    setEmailError('');
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    setPasswordError(''); // Clear error message when user types
+    setPasswordError('');
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     let isValid = true;
 
@@ -78,21 +78,26 @@ const Login = () => {
               />
               {emailError && <div className="invalid-feedback">{emailError}</div>}
             </div>
+
+            {/* --- THIS IS WHERE THE PASSWORD SNIPPET GOES --- */}
             <div className="form-group">
               <label htmlFor="password">Password</label>
               <input
+                value={password}
+                onChange={handlePasswordChange}
                 type="password"
                 name="password"
                 id="password"
                 className={`form-control ${passwordError ? 'is-invalid' : ''}`}
                 placeholder="Enter your password"
-                value={password}
-                onChange={handlePasswordChange}
+                aria-describedby="helpId"
               />
               {passwordError && (
                 <div className="invalid-feedback">{passwordError}</div>
               )}
             </div>
+            {/* --- END OF PASSWORD SNIPPET --- */}
+
             <div className="btn-group">
               <button type="submit" className="btn btn-primary mb-2 mr-1 waves-effect waves-light">
                 Login
